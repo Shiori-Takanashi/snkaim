@@ -18,7 +18,7 @@ scripts/
 utils/
 tree.txt
 .ci_cache/
-
+.docs/
 
 **/services/schema.py
 **/routes/aim.py

@@ -1,11 +1,11 @@
 from flask import Blueprint, render_template
 
 
-sample_bp = Blueprint("sample", __name__)
+home_bp = Blueprint("home", __name__)
 
 
-@sample_bp.get("/")
-def index():
+@home_bp.get("/")
+def home():
     page_title = "Jinja2 サンプルページ"
     description = "ループと条件分岐を含むHTMLテンプレートの例である。"
 
@@ -57,7 +57,7 @@ def index():
     ]
 
     return render_template(
-        "sample.html",
+        "home.html",
         page_title=page_title,
         description=description,
         user=user,
